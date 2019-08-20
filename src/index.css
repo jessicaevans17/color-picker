@@ -1,6 +1,7 @@
 :root {
   font: 16px / 1 sans-serif;
-  --black: ;
+  --rainbow: #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee;
+  --white: #ffffff;
 }
 
 html {
@@ -33,6 +34,7 @@ main {
   border: solid 2px hsl(0, 0%, 0%);
   border-radius: 1rem;
   padding: 4rem;
+  box-shadow: 4px 7px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .sliders {
@@ -43,8 +45,15 @@ main {
 
 .display-type {
   margin-bottom: 1rem;
+  align-self: flex-start;
 }
 
-span {
-  align-self: flex-start;
+button {
+  padding: 1rem;
+  border-radius: 2rem;
+  box-shadow: 4px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  background-image: linear-gradient(var(--rainbow));
+  color: var(--white);
+  font-size: 2rem;
+  text-shadow: 4px 3px 0 black;
 }
