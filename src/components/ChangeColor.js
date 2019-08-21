@@ -54,31 +54,22 @@ class ChangeColors extends Component {
             type="range"
             max="360"
             defaultValue={this.state.hue}
-            className="hue"
             onChange={this.changeHue}
           />
           <section className="display-type">Hue</section>
           <input
             type="range"
             defaultValue={this.state.saturation}
-            className="saturation"
             onChange={this.changeSaturation}
           />
           <section className="display-type">Saturation</section>
           <input
             type="range"
             defaultValue={this.state.lightness}
-            className="lightness"
             onChange={this.changeLightness}
           />
           <section className="display-type">Lightness</section>
-          <h2
-            style={{
-              color: `hsl(${this.state.hue},${this.state.saturation} ,${
-                this.state.lightness
-              } )`
-            }}
-          >{`hsl (${this.state.hue}, ${this.state.saturation}, ${
+          <h2>{`hsl (${this.state.hue}, ${this.state.saturation}, ${
             this.state.lightness
           })`}</h2>
           <button onClick={this.randomColor}>Random Color</button>
