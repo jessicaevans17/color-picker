@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import ChangeColor from "./components/ChangeColor"
+import ChangeColorsWithHooks from "./components/ChangeColorsWithHooks.jsx"
 
 class App extends Component {
   render() {
@@ -8,7 +8,7 @@ class App extends Component {
         <nav>
           <h1>Color Picker</h1>
         </nav>
-        <ChangeColor />
+        <ChangeColorsWithHooks />
       </div>
     )
   }
