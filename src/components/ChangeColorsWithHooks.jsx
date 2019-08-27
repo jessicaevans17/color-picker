@@ -15,7 +15,10 @@ const ChangeColorsWithHooks = () => {
             backgroundColor: `hsl(${hue},${saturation} ,${lightness} )`
           }}
         >
-          Color Displays Here
+          <h2
+            className="hsl-color"
+            style={{ color: `hsl(${hue},${saturation} ,${lightness} )` }}
+          >{`hsl (${hue}, ${saturation}, ${lightness})`}</h2>
         </section>
       </section>
       <section className="sliders">
@@ -44,7 +47,7 @@ const ChangeColorsWithHooks = () => {
           }}
         />
         <section className="display-type">Lightness</section>
-        <h2>{`hsl (${hue}, ${saturation}, ${lightness})`}</h2>
+
         <button
           onClick={() => {
             setHue(Math.floor(Math.random() * 360))

@@ -2,6 +2,7 @@
   font: 16px / 1 sans-serif;
   --rainbow: #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee;
   --white: #ffffff;
+  --black: #000000;
 }
 
 html {
@@ -35,10 +36,16 @@ main {
 
 .color-display-box {
   margin-bottom: 2rem;
-  border: solid 2px hsl(0, 0%, 0%);
+  border: solid 2px var(--black);
   border-radius: 1rem;
   padding: 4rem;
-  box-shadow: 4px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 7px 5px 0px hsla(0, 0%, 0%, 0.75);
+}
+
+.hsl-color {
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 }
 
 .sliders {
