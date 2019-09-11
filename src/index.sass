@@ -1,0 +1,75 @@
+$rainbow-color: #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee
+$white: #ffffff
+$black: #000000
+
+=border($radius)
+  border-radius: $radius
+  border: solid $black 2px
+
+html 
+  height: 100%
+
+
+body 
+  margin: 0
+  min-height: 100%
+  font: 16px / 1 sans-serif
+  
+
+
+h1 
+  font-size: 2rem
+
+
+nav 
+  display: flex
+  flex-direction: column
+  align-items: center
+
+
+main 
+  display: flex
+  flex-direction: column
+  align-items: center
+
+
+.color-display 
+  text-align: center
+
+
+.color-display-box 
+  margin-bottom: 2rem
+  +border(1rem)
+  padding: 4rem
+  box-shadow: 4px 7px 5px 0px hsla(0, 0%, 0%, 0.75)
+
+
+.hsl-color 
+  background-color: $white
+  border-radius: 0.5rem
+  padding: 0.5rem
+
+
+.sliders 
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 2rem;
+  +border(5rem)
+
+
+.display-type 
+  margin-bottom: 1rem
+  align-self: flex-start
+
+
+button 
+  padding: 1rem
+  +border(2rem)
+  box-shadow: 4px 7px 5px 0px rgba(0, 0, 0, 0.75)
+  background-image: linear-gradient($rainbow-color)
+  color: $white
+  font-size: 2rem
+  text-shadow: 4px 3px 0 black
+  cursor: pointer
+
